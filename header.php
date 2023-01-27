@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prints scripts or data in the head tag on the front end -->
+    <?php wp_head(); ?>
 </head>
-
-<!-- Prints scripts or data in the head tag on the front end -->
-<?php wp_head(); ?>
 
 <body>
     <header>
