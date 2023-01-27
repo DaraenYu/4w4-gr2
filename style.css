@@ -33,3 +33,8 @@ h1{
 hr{
     border: 5px dashed black;
 }
+
+footer {
+    background-color: rgb(73, 73, 73);
+    font-size: larger;
+}
