@@ -13,12 +13,12 @@
     // have_posts() - Determines whether current WordPress query has posts to loop over. 
     if (have_posts()):
         // the_post() - Iterate the post index in the loop.
-        while (have_posts()) : the_post();
-        // get_the_title() - Retrieves the post title.
-        echo '<h1>' . get_the_title() . '</h1>';
-        // the_content() - Displays the post content.
-        // the_content(); ?>
-
+        while (have_posts()) : the_post(); ?>
+            <!-- get_permalink() - Retrieves the full permalink for the current post or post ID. Permet d'aller chercher l'adresse du POST -->
+            <!-- get_the_title() - Retrieves the post title.  -->
+            <h1>
+                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+            </h1>;
         <hr>
         <?php endwhile;
     endif;
