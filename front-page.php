@@ -17,7 +17,7 @@
             <!-- get_permalink() - Retrieves the full permalink for the current post or post ID. Permet d'aller chercher l'adresse du POST -->
             <!-- get_the_title() - Retrieves the post title.  -->
             <h1>
-                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                <a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a>
             </h1>;
         <hr>
         <?php endwhile;
