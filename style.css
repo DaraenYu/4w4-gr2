@@ -388,4 +388,6 @@ a:hover {
 .site__footer section {
   flex: 1 1 200px;
   border: 1px solid black;
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+  background-color: rgb(118, 118, 226);
 }/*# sourceMappingURL=style.css.map */
