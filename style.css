@@ -369,4 +369,23 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+a {
+  color: rgb(205, 142, 142);
+}
+a:visited {
+  color: rgb(118, 118, 226);
+}
+a:hover {
+  color: rgb(128, 200, 128);
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.site__footer section {
+  flex: 0 1 100px;
+  border: 1px solid black;
+}/*# sourceMappingURL=style.css.map */
