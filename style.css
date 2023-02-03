@@ -356,6 +356,7 @@ h1 {
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
+  text-align: center;
 }
 
 h3,
@@ -377,6 +378,16 @@ a:visited {
 }
 a:hover {
   color: rgb(128, 200, 128);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: bisque;
+}
+.menu a {
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
 }
 
 /* --------------------------------------------- composant */
