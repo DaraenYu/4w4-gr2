@@ -1,3 +1,12 @@
+.site__header {
+
+}
+
+.site__header__logo {
+    display: flex;
+    justify-content: space-between;
+}
+
 // nav
 .menu-entete-container {
     background-color: bisque;
@@ -5,7 +14,7 @@
     // ul
     .menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
         list-style: none;
     }
 
@@ -16,7 +25,7 @@
         // a
         a {
             display: block;
+            padding: 5px 20px;
         }
     }
 }
-

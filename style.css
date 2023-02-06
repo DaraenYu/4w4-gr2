@@ -393,12 +393,17 @@ a:hover {
   background-color: rgb(118, 118, 226);
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-entete-container {
   background-color: bisque;
 }
 .menu-entete-container .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
 }
 .menu-entete-container .menu-item {
@@ -406,4 +411,5 @@ a:hover {
 }
 .menu-entete-container .menu-item a {
   display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */

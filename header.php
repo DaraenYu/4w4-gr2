@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <header>
-        <!-- the_custom_logo() - Displays a custom logo, linked to home unless the theme supports removing the link on the home page. -->
-        <?php the_custom_logo(); ?>
-        <!-- wp_nav_menu() - Displays a navigation menu. -->
-        <?php wp_nav_menu(array(
-            "menu" => "entete",
-            "container" => "nav"
-        )) ?>
+    <header class="site__header">
+        <section class="site__header__logo" >
+            <!-- the_custom_logo() - Displays a custom logo, linked to home unless the theme supports removing the link on the home page. -->
+            <?php the_custom_logo(); ?>
+            <!-- wp_nav_menu() - Displays a navigation menu. -->
+            <?php wp_nav_menu(array(
+                "menu" => "entete",
+                "container" => "nav"
+            )) ?>
+        </section>
 
         <!-- bloginfo() - Permet d'afficher des informations sur votre site WordPress, telles que le titre, la description, l'url, etc. -->
         <!-- Va chercher le Titre du site et le Slogan du site. Lorsqu'on clique sur le nom du site, on peut revenir à la page d'accueil -->
