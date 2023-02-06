@@ -350,7 +350,7 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
@@ -395,11 +395,13 @@ a:hover {
 
 .site__header__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .menu-entete-container {
-  background-color: bisque;
+  background-color: #418dc2;
+  border-radius: 15px;
 }
 .menu-entete-container .menu {
   display: flex;
@@ -412,4 +414,5 @@ a:hover {
 .menu-entete-container .menu-item a {
   display: block;
   padding: 5px 20px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
