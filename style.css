@@ -390,7 +390,13 @@ a:hover {
   flex: 1 1 200px;
   border: 1px solid black;
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-  background-color: rgb(118, 118, 226);
+  background-color: #418dc2;
+}
+
+.site__header > h2:nth-child(3) {
+  background-color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .site__header__logo {
