@@ -1,0 +1,22 @@
+// nav
+.menu-entete-container {
+    background-color: bisque;
+
+    // ul
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    // li
+    .menu-item {
+        font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
+
+        // a
+        a {
+            display: block;
+        }
+    }
+}
+

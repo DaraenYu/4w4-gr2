@@ -380,16 +380,6 @@ a:hover {
   color: rgb(128, 200, 128);
 }
 
-.menu {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  background-color: bisque;
-}
-.menu a {
-  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
-}
-
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -401,4 +391,19 @@ a:hover {
   border: 1px solid black;
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   background-color: rgb(118, 118, 226);
+}
+
+.menu-entete-container {
+  background-color: bisque;
+}
+.menu-entete-container .menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.menu-entete-container .menu-item {
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
+}
+.menu-entete-container .menu-item a {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

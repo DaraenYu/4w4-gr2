@@ -12,7 +12,8 @@
     <header>
         <!-- wp_nav_menu() - Displays a navigation menu. -->
         <?php wp_nav_menu(array(
-            "menu" => "entete"
+            "menu" => "entete",
+            "container" => "nav"
         )) ?>
 
         <!-- bloginfo() - Permet d'afficher des informations sur votre site WordPress, telles que le titre, la description, l'url, etc. -->
