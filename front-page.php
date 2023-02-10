@@ -8,7 +8,7 @@
 <?php get_header() ?>
 
 <main>
-    <h3>Front Page</h3>
+    <h3>La page d'accueil (Front Page)</h3>
 <?php
     // have_posts() - Determines whether current WordPress query has posts to loop over. 
     if (have_posts()):
@@ -19,6 +19,10 @@
             <h1>
                 <a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a>
             </h1>;
+
+            <!-- wp_trim_words( $text, $num_words, $more, $original_text ) - Cette fonction permet de spécifier le nombre de caractère maximum à afficher en résumé -->
+            <!-- get_the_excerpt() - Cette fonction permet de récupérer un extrait (résumé) d'un article sans l'afficher. -->
+            <?= wp_trim_words(get_the_excerpt(), 10, "&#127829;"); ?>
         <hr>
         <?php endwhile;
     endif;

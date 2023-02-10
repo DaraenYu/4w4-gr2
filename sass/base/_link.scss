@@ -1,12 +1,12 @@
 a {
-    color: rgb(205, 142, 142);
+    color: #C2704C;
 
     &:visited {
-        color: rgb(118, 118, 226);
+        // color: rgb(118, 118, 226);
     }
 
     // & - Permet de continuer le code 
     &:hover {
-        color: rgb(128, 200, 128);
+        color: #38C2B2;
     }
 }
