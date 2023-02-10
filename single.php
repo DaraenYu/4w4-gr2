@@ -16,7 +16,7 @@
         while (have_posts()) : the_post();
             // the_title() - Displays or retrieves the current post title with optional markup.
             the_title('<h1>', '</h1>');
-            // the_content() - Displays the post content.
+            // the_content() - Displays the post content. Affiche l'article complet
             the_content(); ?>
         <hr>
         <?php endwhile;

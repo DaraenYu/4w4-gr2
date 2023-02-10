@@ -1,11 +1,9 @@
-# Exercise 1
+# Matières faient en classe
 ## 4w4 - Conception d'interface et développement Web
 ### Auteur : Christophe Leam-Touch
 #### Description
-- Ajout du composant _menu_entete.scss
-- Ajout de la fonction add_theme_support() dans le fichier functions.php pour insérer un logo
-- Ajout de la fonction the_custom_logo() dans le fichier header.php
-- Modification _menu_entete.scss
+- get_the_excerpt() : Cette fonction permet de récupérer un extrait (résumé) d'un article sans l'afficher.
+- wp_trim_words( $text, $num_words, $more, $original_text ) : Cette fonction permet de spécifier le nombre de caractère maximum à afficher en résumé.
 
 #### Références
 - https://developer.wordpress.org/themes/

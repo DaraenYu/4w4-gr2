@@ -1,5 +1,5 @@
 <?php
-    // Enfiler la feuille de style
+    // 1) Enfiler la feuille de style
     function ajouter_styles() {
         wp_enqueue_style(
             'style-principal'/* $handle - Identificateur du lien css*/,
@@ -12,7 +12,7 @@
     // add_action() - Adds a callback function to an action hook.
     add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 
-    // Enregistrement des menus
+    // 2) Enregistrement des menus
     if ( ! function_exists( 'enregistrement_nav_menu' ) ) {
         function enregistrement_nav_menu(){
             register_nav_menus( array(
@@ -25,7 +25,7 @@
         add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
     }
 
-    // add_theme_support() - Registers theme support for a given feature.
+    // 3) add_theme_support() - Registers theme support for a given feature.
     // title-tag - This feature enables plugins and themes to manage the document title tag. This should be used in place of wp_title() function. 
     add_theme_support( 'title-tag' );
     // custom-logo - This feature, first introduced in Version_4.5, enables Theme_Logo support for a theme. 
