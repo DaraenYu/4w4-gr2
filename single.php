@@ -8,7 +8,7 @@
 <?php get_header() ?>
 
 <main>
-    <h3>Single</h3>
+    <h3>Vous êtes maintenant dans un article (Single)</h3>
 <?php
     // have_posts() - Determines whether current WordPress query has posts to loop over. 
     if (have_posts()):
