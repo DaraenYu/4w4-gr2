@@ -1,5 +1,27 @@
 // Les balises qu'on utilise pour la conversion des fichiers markdown
 
+.markdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #418dc2;
+    color: white;
+}
+
+.markdown > ul {
+    padding: 25px;
+    margin: 25px;
+    border-bottom: 10px solid white;
+}
+
+.markdown > p {
+    padding: 25px;
+    margin: 25px;
+}
+
+.markdown > h1, h2, h3{
+    text-align: center;
+}
+
 // ul, ol {
 
 // }
@@ -20,9 +42,11 @@
 
 // }
 
-// pre {
-
-// }
+pre {
+    background-color: rgb(54, 54, 54);
+    padding: 25px;
+    margin: 25px;
+}
 
 // code {
 
