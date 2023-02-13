@@ -1,0 +1,17 @@
+.blocflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1 0 200px;
+    border: 3px solid #418dc2;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+article > h1 {
+    background-color: #f0f8ff;
+    padding: 5px;
+}
