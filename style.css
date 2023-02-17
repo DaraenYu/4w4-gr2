@@ -388,8 +388,10 @@ a:hover {
 .markdown > ul {
   padding: 25px;
   margin: 25px;
-  border: 10px solid white;
+  border: 10px solid #0c609c;
   border-radius: 15px;
+  background-color: #f0f8ff;
+  color: black;
 }
 
 .markdown > p {
@@ -402,6 +404,10 @@ a:hover {
   background-color: #0c609c;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.markdown > ul > li {
+  list-style-type: decimal;
 }
 
 pre {

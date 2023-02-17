@@ -10,9 +10,10 @@
 .markdown > ul {
     padding: 25px;
     margin: 25px;
-    border: 10px solid white;
+    border: 10px solid #0c609c;
     border-radius: 15px;
-    // list-style-type: none;
+    background-color: #f0f8ff;
+    color: black;
 }
 
 .markdown > p {
@@ -35,9 +36,9 @@
     
 // }
 
-// ul > li {
-
-// }
+.markdown > ul > li {
+    list-style-type: decimal;
+}
 
 // ol > li {
 
