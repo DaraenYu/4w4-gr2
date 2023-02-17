@@ -1,6 +1,6 @@
 <?php
 /*
-* Modèle front-page par défaut
+* Modèle category par défaut
 *
 */
 ?>
@@ -8,6 +8,7 @@
 <?php get_header() ?>
 
 <main>
+    <h3>category.php</h3>
     <section class="blocflex">
         <?php
             // have_posts() - Determines whether current WordPress query has posts to loop over. 
@@ -21,12 +22,9 @@
                             <a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a>
                         </h4>
 
-                        <!-- Si la categorie est cours, affiche tous les articles avec un slug cours -->
-                        <p><?php if(is_category('cours')) echo "cours"; ?></p>
-
                         <!-- wp_trim_words( $text, $num_words, $more, $original_text ) - Cette fonction permet de spécifier le nombre de caractère maximum à afficher en résumé -->
                         <!-- get_the_excerpt() - Cette fonction permet de récupérer un extrait (résumé) d'un article sans l'afficher. -->
-                        <p><?= wp_trim_words(get_the_excerpt(), 10, "<span>&#127829;</span>"); ?></p>
+                        <p><?= wp_trim_words(get_the_excerpt(), 10, "&#127829;"); ?></p>
                     </article>
                 <?php endwhile;
             endif;
