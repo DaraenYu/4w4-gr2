@@ -10,7 +10,9 @@
 .markdown > ul {
     padding: 25px;
     margin: 25px;
-    border-bottom: 10px solid white;
+    border: 10px solid white;
+    border-radius: 15px;
+    // list-style-type: none;
 }
 
 .markdown > p {
@@ -20,6 +22,9 @@
 
 .markdown > h1, h2, h3{
     text-align: center;
+    background-color: #0c609c;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 // ul, ol {

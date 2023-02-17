@@ -8,7 +8,6 @@
 <?php get_header() ?>
 
 <main>
-    <h3>category.php</h3>
     <section class="blocflex">
         <?php
             // have_posts() - Determines whether current WordPress query has posts to loop over. 
