@@ -447,6 +447,11 @@ article > h1 {
   background-color: #418dc2;
 }
 
+.resultat-titre, .resultat-texte {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .recherche__input {
   border-radius: 5px;
   font-size: 110%;

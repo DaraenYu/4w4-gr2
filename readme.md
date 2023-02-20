@@ -11,7 +11,7 @@
 - S5C1 - Ajout de la fonction get_search_form() dans header.php
 - S5C1 - Création du fichier search.php
 - S5C1 - Ajout et modification du fichier _searchform.scss
-- S5C1 - Ajout du fichier _search.scss
+- S5C1 - Ajout et modification du fichier _search.scss
 - S5C1 - Ajout de la fonction mb_strimwidth dans le fichier search.php
 
 #### Références
