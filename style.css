@@ -447,6 +447,24 @@ article > h1 {
   background-color: #418dc2;
 }
 
+.recherche__input {
+  border-radius: 5px;
+  font-size: 110%;
+}
+
+.recherche__bouton {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.recherche__bouton:hover {
+  background-color: #0c609c;
+}
+
+.recherche__icone {
+  font-size: 150%;
+}
+
 .site__header > h2:nth-child(3) {
   background-color: aliceblue;
   padding-top: 20px;
