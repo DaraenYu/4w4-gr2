@@ -18,6 +18,8 @@
                 "menu" => "entete",
                 "container" => "nav"
             )) ?>
+            <!-- Ajout de la fonction qui permet la recherche -->
+            <?php get_search_form() ?>
         </section>
 
         <!-- bloginfo() - Permet d'afficher des informations sur votre site WordPress, telles que le titre, la description, l'url, etc. -->

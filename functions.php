@@ -35,4 +35,21 @@
     ) );
     // post-thumbnails - This feature enables Post Thumbnails support for a theme. Note that you can optionally pass a second argument, $args, with an array of the Post Types for which you want to enable this feature. 
     add_theme_support( 'post-thumbnails' );
+
+    /**
+     * 4) Modifie la requete principale de Wordpress avant qu'elle soit exécuté
+     * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
+     * Dépendant de la condition initiale on peut filtrer un type particulier de requête
+     * Dans ce cas çi nous filtrons la requête de la page d'accueil
+     * @param WP_query  $query la requête principal de WP
+     */
+    function cidweb_modifie_requete_principal( $query ) {
+        // Si on  est dans la page d'accueil et [?] et qu'on est pas dans una page administrateur
+        if ($query->is_home() && $query->is_main_query() && ! is_admin()) {
+            $query->set('category_name', '4w4');
+            $query->set('orderby', 'title');
+            $query->set('order', 'ASC');
+        }
+    }
+    add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 ?>
