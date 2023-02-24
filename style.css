@@ -429,6 +429,10 @@ pre {
   border-radius: 15px;
   padding: 1rem;
 }
+.blocflex article:hover {
+  box-shadow: rgba(56, 194, 178, 0.4) 5px 5px, rgba(56, 194, 178, 0.3) 10px 10px, rgba(56, 194, 178, 0.2) 15px 15px, rgba(56, 194, 178, 0.1) 20px 20px, rgba(56, 194, 178, 0.05) 25px 25px;
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 article > h1 {
   background-color: #f0f8ff;
