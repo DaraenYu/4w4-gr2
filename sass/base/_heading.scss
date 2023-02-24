@@ -1,0 +1,40 @@
+//   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiIxODAwcHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D
+
+h1 {
+    font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
+}
+
+h4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h5 {
+    font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+}
+
+h6 {
+    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+}
+
+P {
+    font-size: clamp(1rem, 0.5rem + 1vw, 2rem)
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

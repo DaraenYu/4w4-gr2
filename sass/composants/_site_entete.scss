@@ -1,0 +1,42 @@
+.site__header > h2:nth-child(3) {
+    background-color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site__header__logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // flex-direction: column;
+}
+
+.custom-logo-link {
+    margin: 1rem;
+}
+
+// nav
+.menu-entete-container {
+    background-color: #418dc2;
+    border-radius: 15px;
+    margin: 1rem;
+
+    // ul
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    // li
+    .menu-item {
+        font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
+
+        // a
+        a {
+            display: block;
+            margin: 1rem;
+            color: white;
+        }
+    }
+}

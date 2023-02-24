@@ -1,0 +1,35 @@
+/*
+Theme Name: 4w4-christophe-leam-touch
+Theme URI: https://referenced.ca
+Author: Christophe Leam-Touch
+Author URI: https://github.com/DaraenYu
+Description: Un thème de base qui nous permettra d'apprendre les rudiments de la création de thème
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 4w4
+*/
+
+@import "normalize/normalize";
+
+// Génère des variables SASS
+@import "variables/dimension";
+@import "variables/root";
+// @import "normalize/box-sizing";
+
+/* --------------------------------------------- base */
+@import "base/adaptatif";
+@import "base/heading";
+// @import "base/espacement";
+@import "base/link";
+@import "base/markdown";
+// @import "base/list";
+
+
+/* --------------------------------------------- composant */
+@import "composants/bloc_flex";
+@import "composants/pied_page";
+@import "composants/search";
+@import "composants/searchform";
+@import "composants/site_entete";

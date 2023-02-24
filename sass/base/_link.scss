@@ -1,0 +1,12 @@
+a {
+    color: #C2704C;
+
+    &:visited {
+        // color: rgb(118, 118, 226);
+    }
+
+    // & - Permet de continuer le code 
+    &:hover {
+        color: #38C2B2;
+    }
+}

@@ -1,0 +1,70 @@
+// Les balises qu'on utilise pour la conversion des fichiers markdown
+
+.markdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #418dc2;
+    color: white;
+}
+
+.markdown > ul {
+    padding: 2rem;
+    margin: 1rem;
+    border: 10px solid #0c609c;
+    border-radius: 15px;
+    background-color: #f0f8ff;
+    color: black;
+}
+
+.markdown > p, pre, blockquote {
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.markdown > h1, h2, h3{
+    text-align: center;
+    background-color: #0c609c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+// ul, ol {
+
+// }
+
+// ul > li, ol > li {
+    
+// }
+
+.markdown > ul > li {
+    list-style-type: decimal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+// ol > li {
+
+// }
+
+// ol > li > ol {
+
+// }
+
+pre {
+    background-color: rgb(54, 54, 54);
+}
+
+// code {
+
+// }
+
+// i {
+
+// }
+
+// blockquote {
+
+// }
+
+// hr {
+
+// }
