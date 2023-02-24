@@ -3,16 +3,11 @@
 ### Auteur : Christophe Leam-Touch
 #### Description
 
-- S4C2 - Améliorer la classe .blocflex
-- S4C2 - Création du modèle category.php
-- S4C2 - Améliorer l'affichage des articles « markdown »
-- S5C1 - Intégration de l'action pre_get_posts dans le fichier function.php
-- S5C1 - Création et intégration du formulaire de recherche personnalisée dans searchform.php
-- S5C1 - Ajout de la fonction get_search_form() dans header.php
-- S5C1 - Création du fichier search.php
-- S5C1 - Ajout et modification du fichier _searchform.scss
-- S5C1 - Ajout et modification du fichier _search.scss
-- S5C1 - Ajout de la fonction mb_strimwidth dans le fichier search.php
+- S5C2 - Ajout box-shadow on hover sur les articles dans _bloc_flex.scss 
+- S5C2 - Intégration de la classe WP_Query() dans category.php.
+- S5C2 – Intégration du fichier _adaptatif.scss pour modifier _site_entete.scss
+- S5C2 – Amélioration CSS de l'entête + Retirer le bloginfo('name') de header.php
+
 
 #### Références
 - https://developer.wordpress.org/themes/

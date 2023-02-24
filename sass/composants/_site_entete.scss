@@ -1,7 +1,3 @@
-.site__header {
-    // À Remplir
-}
-
 .site__header > h2:nth-child(3) {
     background-color: aliceblue;
     padding-top: 20px;
@@ -15,10 +11,15 @@
     // flex-direction: column;
 }
 
+.custom-logo-link {
+    margin: 1rem;
+}
+
 // nav
 .menu-entete-container {
     background-color: #418dc2;
     border-radius: 15px;
+    margin: 1rem;
 
     // ul
     .menu {
