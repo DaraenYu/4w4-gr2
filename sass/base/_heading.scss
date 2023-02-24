@@ -1,20 +1,12 @@
 //   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiIxODAwcHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D
 
 h1 {
-    text-align: center;
-    font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-}
-
-h2 {
-    font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
-}
-
-h3 {
-    font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+    font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
 }
 
 h4 {
-    font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 h5 {
@@ -26,26 +18,23 @@ h6 {
 }
 
 P {
-    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+    font-size: clamp(1rem, 0.5rem + 1vw, 2rem)
 }
 
-h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    /* font-family: "Slackey", cursive; */
+h1, h2 {
     text-align: center;
 }
 
+h2, h3, h4 {
+    font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
+}
+
+p,
+h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

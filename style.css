@@ -321,26 +321,18 @@ template {
 }
 
 /* --------------------------------------------- base */
-@media (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .menu {
     flex-direction: column;
   }
 }
 h1 {
-  text-align: center;
-  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-}
-
-h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
-}
-
-h3 {
-  font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
 }
 
 h4 {
-  font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 h5 {
@@ -352,28 +344,25 @@ h6 {
 }
 
 P {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
 }
 
-h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /* font-family: "Slackey", cursive; */
+h1, h2 {
   text-align: center;
 }
 
+h2, h3, h4 {
+  font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
+}
+
+p,
+h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -391,17 +380,17 @@ a:hover {
 }
 
 .markdown > ul {
-  padding: 25px;
-  margin: 25px;
+  padding: 2rem;
+  margin: 1rem;
   border: 10px solid #0c609c;
   border-radius: 15px;
   background-color: #f0f8ff;
   color: black;
 }
 
-.markdown > p {
-  padding: 25px;
-  margin: 25px;
+.markdown > p, pre, blockquote {
+  padding: 2rem;
+  margin: 1rem;
 }
 
 .markdown > h1, h2, h3 {
@@ -413,13 +402,11 @@ a:hover {
 
 .markdown > ul > li {
   list-style-type: decimal;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 pre {
   background-color: rgb(54, 54, 54);
-  padding: 25px;
-  margin: 25px;
 }
 
 /* --------------------------------------------- composant */
@@ -514,6 +501,6 @@ article > h1 {
 }
 .menu-entete-container .menu-item a {
   display: block;
-  padding: 5px 20px;
+  margin: 1rem;
   color: white;
 }/*# sourceMappingURL=style.css.map */

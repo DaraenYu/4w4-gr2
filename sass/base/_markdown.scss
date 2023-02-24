@@ -8,17 +8,17 @@
 }
 
 .markdown > ul {
-    padding: 25px;
-    margin: 25px;
+    padding: 2rem;
+    margin: 1rem;
     border: 10px solid #0c609c;
     border-radius: 15px;
     background-color: #f0f8ff;
     color: black;
 }
 
-.markdown > p {
-    padding: 25px;
-    margin: 25px;
+.markdown > p, pre, blockquote {
+    padding: 2rem;
+    margin: 1rem;
 }
 
 .markdown > h1, h2, h3{
@@ -38,7 +38,7 @@
 
 .markdown > ul > li {
     list-style-type: decimal;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 // ol > li {
@@ -51,8 +51,6 @@
 
 pre {
     background-color: rgb(54, 54, 54);
-    padding: 25px;
-    margin: 25px;
 }
 
 // code {
