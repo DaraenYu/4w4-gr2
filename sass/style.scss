@@ -19,11 +19,13 @@ Text Domain: 4w4
 // @import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
+@import "base/adaptatif";
 @import "base/heading";
 // @import "base/espacement";
 @import "base/link";
 @import "base/markdown";
 // @import "base/list";
+
 
 /* --------------------------------------------- composant */
 @import "composants/bloc_flex";

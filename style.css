@@ -321,6 +321,11 @@ template {
 }
 
 /* --------------------------------------------- base */
+@media (max-width: 991px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 h1 {
   text-align: center;
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
