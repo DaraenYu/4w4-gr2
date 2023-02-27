@@ -7,6 +7,6 @@ a {
 
     // & - Permet de continuer le code 
     &:hover {
-        color: #38C2B2;
+        color: $couleur_hover;
     }
 }

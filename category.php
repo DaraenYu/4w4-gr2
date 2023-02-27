@@ -25,8 +25,20 @@
                     <!-- get_permalink() - Retrieves the full permalink for the current post or post ID. Permet d'aller chercher l'adresse du POST -->
                     <!-- get_the_title() - Retrieves the post title.  -->
                     <article>
+
+                        <!-- Modification des titres de chaque article lorsque nous sommes dans la category 'cours' -->
+                        <?php
+                            $titre = get_the_title();
+                            if ($category -> slug == 'cours') {
+                                $titre = substr($titre, 7, 50);
+                            }
+                            if ($category -> slug == '4w4') {
+                                $titre = substr($titre, 3, 20);
+                            }
+                        ?>
+
                         <h4>
-                            <a href="<?= get_permalink(); ?>"><?= get_the_title(); ?></a>
+                            <a href="<?= get_permalink(); ?>"><?= $titre; ?></a>
                         </h4>
 
                         <!-- wp_trim_words( $text, $num_words, $more, $original_text ) - Cette fonction permet de spécifier le nombre de caractère maximum à afficher en résumé -->
@@ -35,7 +47,7 @@
                     </article>
                 <?php endwhile; ?>
             <?php endif;
-            wp_reset_postdata(); ?>
+            wp_reset_postdata(); 
         ?>
     </section>
 </main>

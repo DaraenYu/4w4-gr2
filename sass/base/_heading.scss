@@ -18,7 +18,7 @@ h6 {
 }
 
 P {
-    font-size: clamp(1rem, 0.5rem + 1vw, 2rem)
+    font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
 }
 
 h1, h2 {
@@ -27,6 +27,7 @@ h1, h2 {
 
 h2, h3, h4 {
     font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
+    color: white;
 }
 
 p,

@@ -1,14 +1,19 @@
 .site__header > h2:nth-child(3) {
-    background-color: aliceblue;
+    background-color: rgb(233, 65, 23);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .site__header__logo {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     // flex-direction: column;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+    }
 }
 
 .custom-logo-link {
@@ -17,15 +22,21 @@
 
 // nav
 .menu-entete-container {
-    background-color: #418dc2;
+    background-color: $couleur_accent;
     border-radius: 15px;
     margin: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     // ul
     .menu {
         display: flex;
+        flex-direction: column;
         justify-content: flex-end;
-        list-style: none;
+        list-style-type: none;
+
+        @media screen and (min-width: 1000px) {
+            flex-direction: row;
+        }
     }
 
     // li

@@ -1,3 +1,25 @@
+.recherche {
+    margin: 1rem;
+}
+
+.recherche__input {
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+.recherche__bouton {
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.recherche__bouton:hover {
+    background-color: $couleur_accent;
+}
+
+.recherche__icone {
+    font-size: 150%;
+}
+
 .resultat-titre, .resultat-texte {
     padding-left: 20px;
     padding-right: 20px;

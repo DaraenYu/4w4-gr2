@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: $couleur_accent;
+    color: white;
+    font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     section {
         flex: 1 1 200px;
-        border: 1px solid black;
-        font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-        background-color: #418dc2;
+        // border: 1px solid black;
     }
 }
