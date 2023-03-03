@@ -546,6 +546,14 @@ pre {
   background-color: #0c609c;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.site__aside ul {
+  list-style-type: none;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside ul {
+    flex: 1 0 100%;
+  }
+}
 
 .site__main {
   grid-area: main;

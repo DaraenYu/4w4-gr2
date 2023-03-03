@@ -9,6 +9,17 @@
     grid-area: aside;
     background-color: $couleur_accent;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    ul {
+        list-style-type: none;
+        // display: flex;
+    }
+
+    @media screen and (min-width: 1000px){
+        ul {
+            flex: 1 0 100%;
+        }
+    }
 }
 
 .site__main {
