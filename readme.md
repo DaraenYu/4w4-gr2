@@ -10,6 +10,10 @@
 - Continuer de faire progresser votre thème
 - Déployer votre projet sur le serveur Siteground
 
+### Progrès du TP1
+- S6C1 – Ajout Aside + Amélioration CSS
+- S6C2 - Intégration de get_template_part() + Galerie d'images + Amélioration CSS
+
 ### Lien vers mon Siteground
 - https://cidweb12.sg-host.com/
 
