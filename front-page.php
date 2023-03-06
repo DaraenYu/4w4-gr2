@@ -16,11 +16,11 @@
       while (have_posts()) : the_post(); ?>
         <!-- get_template_part() - Permet d'inclure un fichier de modèle stocké dans le dossier "template-parts" d'un thème WordPress -->
         <?php
-        $categorie = '4w4';
+        $ma_categorie = '4w4';
         if (in_category('galerie')) {
-          $categorie = "galerie";
+          $ma_categorie = "galerie";
         }
-        get_template_part('template-parts/categorie', $categorie) ?>
+        get_template_part('template-parts/categorie', $ma_categorie) ?>
       <?php endwhile; ?>
     <?php endif;
     ?>

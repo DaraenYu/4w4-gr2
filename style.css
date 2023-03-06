@@ -545,6 +545,7 @@ pre {
   grid-area: aside;
   background-color: #0c609c;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px 15px 0 0;
 }
 .site__aside ul {
   list-style-type: none;
