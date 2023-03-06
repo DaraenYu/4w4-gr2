@@ -2,7 +2,7 @@
 <!-- get_the_title() - Retrieves the post title.  -->
 <?php
   $titre = get_the_title();
-  $titre_long = substr($titre, 7, -5);
+  $titre_long = substr($titre, 7, -6);
   $sigle = substr($titre, 0, 7);
   // $duree = substr($titre, 60, 0);
 ?>

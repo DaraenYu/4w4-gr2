@@ -17,7 +17,7 @@
                 // the_title() - Displays or retrieves the current post title with optional markup.
                 // the_title('<h4>', '</h4>');?>
                 <!-- mb_strimwidth - Get truncated string with specified width -->
-                <h4 class="resultat-titre"><?= mb_strimwidth(get_the_title(), 7, 50, "..."); ?></h4>
+                <h4 class="resultat-titre"><?= mb_strimwidth(get_the_title(), 0, 100, "..."); ?></h4>
                 <!-- On raccourci le texte de la recherche -->
                 <p class="resultat-texte"><?= wp_trim_words(get_the_excerpt(), 50, "..."); ?></p>
             <hr>

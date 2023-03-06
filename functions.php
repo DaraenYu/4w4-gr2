@@ -58,14 +58,14 @@
      * Pour filtrer les choix offerts par un menu spécifique en raccourcissant le nombre de caractères de chacun des choix.
      * Vous pouvez utiliser la fonction wp_trim_words de WordPress.
      */
-    function personnaliser_menu_item_title($title, $item, $args, $depth) {
+    function personnaliser_menu_item_title($titre, $item, $args, $depth) {
         // Remplacer 'cours' par l'identifiant de votre menu.
         // 'menu' = le nom du menu
         if($args->menu == 'cours') {
             // Modifier la longueur du titre en fonction de vos besoins. Ici, on garde unquement 3 mots
-            $title = wp_trim_words($title, 5, ' ... ');
+            $titre = substr($titre, 7, -6);
         }
-        return $title;
+        return $titre;
     }
     add_filter('nav_menu_item_title', 'personnaliser_menu_item_title', 10, 4);
 ?>
