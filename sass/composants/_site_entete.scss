@@ -31,7 +31,6 @@
     .menu {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         list-style-type: none;
 
         @media screen and (min-width: 1000px) {
