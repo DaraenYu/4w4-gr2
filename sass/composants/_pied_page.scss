@@ -1,6 +1,7 @@
 .site__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     background-color: $couleur_accent;
     color: white;
@@ -8,7 +9,15 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
     section {
-        flex: 1 1 200px;
-        // border: 1px solid black;
+        flex: 1 1 300px;
+
+        h4{
+            text-align: center;
+        }
+
+        ul > li {
+            list-style-type: none;
+            font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+        }
     }
 }

@@ -354,6 +354,7 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-wrap: anywhere;
 }
 
 a {
@@ -453,7 +454,8 @@ pre {
 
 .site__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   background-color: #0c609c;
   color: white;
@@ -461,7 +463,14 @@ pre {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .site__footer section {
-  flex: 1 1 200px;
+  flex: 1 1 300px;
+}
+.site__footer section h4 {
+  text-align: center;
+}
+.site__footer section ul > li {
+  list-style-type: none;
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
 }
 
 .recherche {
