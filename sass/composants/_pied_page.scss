@@ -1,23 +1,23 @@
 .site__footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: $couleur_accent;
-    color: white;
-    font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $couleur_accent;
+  color: white;
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-    section {
-        flex: 1 1 300px;
+  section {
+    flex: 1 1 300px;
 
-        h4{
-            text-align: center;
-        }
-
-        ul > li {
-            list-style-type: none;
-            font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
-        }
+    h4 {
+      text-align: center;
     }
+
+    ul>li {
+      list-style-type: none;
+      font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+    }
+  }
 }

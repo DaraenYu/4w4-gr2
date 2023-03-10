@@ -17,16 +17,19 @@
     <!-- Va chercher le Titre du site et le Slogan du site. Lorsqu'on clique sur le nom du site, on peut revenir à la page d'accueil -->
     <!-- <h1> <a href=" bloginfo('url') "> bloginfo('name') </a> </h1>-->
     <h1><?= bloginfo('description') ?></h1>
-    <section class="site__header__logo">
+    <section class="site__header__nav">
       <!-- the_custom_logo() - Displays a custom logo, linked to home unless the theme supports removing the link on the home page. -->
       <?php the_custom_logo(); ?>
-      <!-- wp_nav_menu() - Displays a navigation menu. -->
-      <?php wp_nav_menu(array(
-        "menu" => "entete",
-        "container" => "nav"
-      )) ?>
       <!-- Ajout de la fonction qui permet la recherche -->
       <?php get_search_form() ?>
+      <input type="checkbox" id="cc">
+      <label class="burger" for="cc"><img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
+        <!-- wp_nav_menu() - Displays a navigation menu. -->
+        <?php wp_nav_menu(array(
+          "menu" => "entete",
+          "container" => "nav"
+        )) ?>
+      </label>
     </section>
   </header>
   <!-- Ajout du menu aside -->

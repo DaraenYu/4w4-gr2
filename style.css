@@ -420,6 +420,180 @@ pre {
 }
 
 /* --------------------------------------------- composant */
+.site__header {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+}
+.site__header h1 {
+  background-color: #0c609c;
+  border-radius: 15px;
+  color: white;
+  padding: 1rem;
+}
+
+.site__header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .site__header__nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.custom-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .custom-logo-link {
+    justify-content: flex-start;
+  }
+}
+
+.burger {
+  display: contents;
+  cursor: pointer;
+  transition: transform 600ms;
+}
+@media screen and (min-width: 1000px) {
+  .burger {
+    display: block ruby;
+  }
+}
+
+#cc,
+#cc:checked ~ .burger > .menu-entete-container {
+  display: none;
+}
+
+#cc:checked ~ .burger {
+  display: unset;
+}
+
+.menu-entete-container {
+  background-color: #0c609c;
+  border-radius: 15px;
+  margin: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu-entete-container .menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+  }
+}
+.menu-entete-container .menu .menu-item {
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  margin: 1rem;
+  color: white;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: #0c609c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 15px 15px 0 0;
+  word-wrap: break-word;
+  padding: 0 1rem 0 1rem;
+}
+.site__aside ul {
+  list-style-type: none;
+}
+.site__aside ul li {
+  list-style-type: "📚";
+  padding-inline-start: 1em;
+  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
+  margin: 0.7em;
+}
+@media screen and (min-width: 1000px) {
+  .site__aside ul {
+    flex: 1 0 100%;
+  }
+}
+
+.site__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #0c609c;
+  color: white;
+  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.site__footer section {
+  flex: 1 1 300px;
+}
+.site__footer section h4 {
+  text-align: center;
+}
+.site__footer section ul > li {
+  list-style-type: none;
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+}
+
+.recherche {
+  margin: 1rem;
+}
+
+.recherche__input {
+  border-radius: 5px;
+  font-size: 110%;
+}
+
+.recherche__bouton {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.recherche__icone {
+  font-size: 150%;
+}
+
+.resultat-titre,
+.resultat-texte {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* --------------------------------------------- layout */
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "aside" "main" "footer";
+  }
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
 .blocflex {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -453,154 +627,5 @@ pre {
 }
 
 .site__footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: #0c609c;
-  color: white;
-  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.site__footer section {
-  flex: 1 1 300px;
-}
-.site__footer section h4 {
-  text-align: center;
-}
-.site__footer section ul > li {
-  list-style-type: none;
-  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
-}
-
-.recherche {
-  margin: 1rem;
-}
-
-.recherche__input {
-  border-radius: 5px;
-  width: 100%;
-  font-size: 110%;
-}
-
-.recherche__bouton {
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.recherche__bouton:hover {
-  background-color: #0c609c;
-}
-
-.recherche__icone {
-  font-size: 150%;
-}
-
-.resultat-titre, .resultat-texte {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.site__header > h2:nth-child(3) {
-  background-color: rgb(233, 65, 23);
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.site__header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-@media screen and (min-width: 1000px) {
-  .site__header__logo {
-    flex-direction: row;
-  }
-}
-
-.custom-logo-link {
-  margin: 1rem;
-}
-
-.menu-entete-container {
-  background-color: #0c609c;
-  border-radius: 15px;
-  margin: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.menu-entete-container .menu {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-}
-@media screen and (min-width: 1000px) {
-  .menu-entete-container .menu {
-    flex-direction: row;
-  }
-}
-.menu-entete-container .menu-item {
-  font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 1.25rem);
-}
-.menu-entete-container .menu-item a {
-  display: block;
-  margin: 1rem;
-  color: white;
-}
-
-/* --------------------------------------------- layout */
-.site__header {
-  grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
-}
-
-.site__aside {
-  grid-area: aside;
-  background-color: #0c609c;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 15px 15px 0 0;
-  word-wrap: break-word;
-  padding: 0 1rem 0 1rem;
-}
-.site__aside ul {
-  list-style-type: none;
-}
-.site__aside ul li {
-  list-style-type: "📚";
-  padding-inline-start: 1em;
-  font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
-  margin: 0.7em;
-}
-@media screen and (min-width: 1000px) {
-  .site__aside ul {
-    flex: 1 0 100%;
-  }
-}
-
-.site__main {
-  grid-area: main;
-  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-}
-
-.site__footer {
   grid-area: footer;
-}
-
-.site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "aside" "main" "footer";
-}
-@media screen and (min-width: 1000px) {
-  .site {
-    grid-template-columns: 20% auto;
-    grid-template-areas: "header header" "aside main" "footer footer";
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .no-aside {
-    grid-template-columns: auto;
-    grid-template-areas: "header" "aside" "main" "footer";
-  }
 }/*# sourceMappingURL=style.css.map */
