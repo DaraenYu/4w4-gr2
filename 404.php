@@ -8,8 +8,8 @@
 <?php get_header() ?>
 
 <main>
-    <h3>404</h3>
-    <p>La page n'est pas disponible</p>
+  <h3>404</h3>
+  <p>La page n'est pas disponible</p>
 </main>
 
 <!-- Permet d'aller chercher le fichier footer.php -->

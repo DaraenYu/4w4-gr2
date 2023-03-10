@@ -1,0 +1,10 @@
+.site__header {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        flex-direction: column;
+    }
+}

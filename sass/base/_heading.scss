@@ -1,4 +1,6 @@
-//   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiIxODAwcHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjUycHgifQ%3D%3D
+// Variables SCSS
+$couleur_accent : #0c609c;
+$couleur_hover : #38C2B2;
 
 h1 {
     font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
@@ -33,4 +35,13 @@ h5,
 h6 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     word-wrap: anywhere;
+}
+
+a {
+    color: #C2704C;
+    
+    // & - Permet de continuer le code 
+    &:hover {
+        color: $couleur_hover;
+    }
 }

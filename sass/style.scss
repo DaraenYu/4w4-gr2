@@ -14,19 +14,16 @@ Text Domain: 4w4
 /* --------------------------------------------- normalize */
 @import "normalize/normalize";
 
-// Génère des variables SASS
-@import "variables/dimension";
-
 /* --------------------------------------------- base */
 @import "base/heading";
-@import "base/link";
 @import "base/markdown";
 
 /* --------------------------------------------- composant */
-@import "composants/bloc_flex";
+@import "composants/header";
+@import "composants/aside";
 @import "composants/pied_page";
 @import "composants/search";
 @import "composants/site_entete";
 
 /* --------------------------------------------- layout */
-@import "layout/aside-contenu";
+@import "layout/layout";

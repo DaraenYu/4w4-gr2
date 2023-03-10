@@ -10,6 +10,7 @@
 </head>
 
 <!-- Si on affiche la page principal, appel la class no-aside aside. Sinon, appel psa la class no-aside -->
+
 <body class="site <?= (is_front_page() ? 'no-aside' : '') ?>">
   <header class="site__header">
     <!-- bloginfo() - Permet d'afficher des informations sur votre site WordPress, telles que le titre, la description, l'url, etc. -->
@@ -30,7 +31,7 @@
   </header>
   <!-- Ajout du menu aside -->
   <?php
-    if (! is_front_page()) {
-      get_template_part("template-parts/aside"); 
-    }
+  if (!is_front_page()) {
+    get_template_part("template-parts/aside");
+  }
   ?>
