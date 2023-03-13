@@ -1,12 +1,16 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <footer class="site__footer">
   <section>
-    <h4>Références</h4>
-    <?php wp_nav_menu(array(
-      "menu" => "pied2page"
-    )) ?>
+    <p>Thème réalisé par Christophe Leam-Touch</p>
   </section>
   <section>
-    <h4>Informations</h4>
+    <a href="https://github.com/DaraenYu" title="Github" class="fa fa-github" style="font-size: 38px;"></a>
+    <a href="https://www.behance.net/christoleto" title="Behance" class="fa fa-behance" style="font-size: 38px;"></a>
+    <a href="https://ca.linkedin.com/in/christophe-leam-touch-977336123" title="Linkedin" class="fa fa-linkedin" style="font-size: 38px;"></a>
+  </section>
+  <section>
+    <p>© 2023 Tous droits réservés - 4PA - TIM.</p>
   </section>
 </footer>
 

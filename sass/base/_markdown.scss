@@ -1,60 +1,40 @@
-// Les balises qu'on utilise pour la conversion des fichiers markdown
-
 .markdown {
-    display: flex;
-    flex-direction: column;
     background-color: #418dc2;
-    border-radius: 15px 15px 0 0;
-
-    p, h4, h3, h5, h6 {
-        color: white;
-    }
-
-    h4, h3, h5, h6 {
-        padding: 0;
-    }
-
-    figure {
-        cursor: pointer;
-        margin: 0.5rem;
-        opacity: 0.5;
-        transition-duration: 0.5s;
-    }
-
-    figure:hover {
-        opacity: 1;
-    }
-}
-
-.markdown > ul {
-    padding: 2rem;
-    margin: 1rem;
-    border: 10px solid $couleur_accent;
-    border-radius: 15px;
-    background-color: #f0f8ff;
-    color: black;
-}
-
-.markdown > p, pre, blockquote {
-    padding: 2rem;
-    margin: 1rem;
     color: white;
-}
-
-.markdown > h1, h2, h3{
-    text-align: center;
-    background-color: $couleur_accent;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.markdown > ul > li {
-    list-style-type: decimal;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
-pre {
-    background-color: rgb(54, 54, 54);
-    overflow-x: scroll;
+    @media screen and (min-width: 1000px) {
+        border-radius: 15px 15px 0 0;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: unset;
+        font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+        border-radius: 15px;
+        border: 5px solid white;
+        background-color: $couleur_accent;
+        padding: 1rem clamp(1rem, 3vw, 20rem);
+    }
+
+    pre {
+        background-color: rgb(54, 54, 54);
+        padding: 1rem clamp(1rem, 3vw, 20rem);
+        border-radius: 15px;
+        overflow-x: scroll;
+        max-width: 100vw;
+
+        code {
+            font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+        }
+    }
+
+    blockquote {
+        margin: 0;
+    }
 }

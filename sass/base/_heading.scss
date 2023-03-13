@@ -3,27 +3,26 @@ $couleur_accent : #0c609c;
 $couleur_hover : #38C2B2;
 
 h1 {
-    font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
+  font-size: clamp(1.875rem, 0.6749rem + 1.9376vw, 3rem);
 }
 
 h5 {
-    font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
 }
 
 h6 {
-    font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
 }
 
 P {
-    font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+  word-wrap: anywhere;
 }
 
-h1, h2 {
-    text-align: center;
-}
-
-h2, h3, h4 {
-    font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
+h2,
+h3,
+h4 {
+  font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
 }
 
 p,
@@ -33,15 +32,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    word-wrap: anywhere;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
-    color: #C2704C;
-    
-    // & - Permet de continuer le code 
-    &:hover {
-        color: $couleur_hover;
-    }
+  color: #C2704C;
+
+  &:hover {
+    color: $couleur_hover;
+  }
 }

@@ -86,7 +86,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -336,13 +337,12 @@ h6 {
 
 P {
   font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+  word-wrap: anywhere;
 }
 
-h1, h2 {
-  text-align: center;
-}
-
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-size: clamp(1.075rem, 0.6749rem + 1.0376vw, 3rem);
 }
 
@@ -354,7 +354,6 @@ h4,
 h5,
 h6 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  word-wrap: anywhere;
 }
 
 a {
@@ -365,58 +364,40 @@ a:hover {
 }
 
 .markdown {
-  display: flex;
-  flex-direction: column;
   background-color: #418dc2;
-  border-radius: 15px 15px 0 0;
-}
-.markdown p, .markdown h4, .markdown h3, .markdown h5, .markdown h6 {
   color: white;
-}
-.markdown h4, .markdown h3, .markdown h5, .markdown h6 {
-  padding: 0;
-}
-.markdown figure {
-  cursor: pointer;
-  margin: 0.5rem;
-  opacity: 0.5;
-  transition-duration: 0.5s;
-}
-.markdown figure:hover {
-  opacity: 1;
-}
-
-.markdown > ul {
-  padding: 2rem;
-  margin: 1rem;
-  border: 10px solid #0c609c;
-  border-radius: 15px;
-  background-color: #f0f8ff;
-  color: black;
-}
-
-.markdown > p, pre, blockquote {
-  padding: 2rem;
-  margin: 1rem;
-  color: white;
-}
-
-.markdown > h1, h2, h3 {
-  text-align: center;
-  background-color: #0c609c;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.markdown > ul > li {
-  list-style-type: decimal;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-pre {
+@media screen and (min-width: 1000px) {
+  .markdown {
+    border-radius: 15px 15px 0 0;
+  }
+}
+.markdown h1,
+.markdown h2 {
+  text-align: center;
+}
+.markdown ul {
+  list-style-type: unset;
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+  border-radius: 15px;
+  border: 5px solid white;
+  background-color: #0c609c;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+}
+.markdown pre {
   background-color: rgb(54, 54, 54);
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  border-radius: 15px;
   overflow-x: scroll;
+  max-width: 100vw;
+}
+.markdown pre code {
+  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+}
+.markdown blockquote {
+  margin: 0;
 }
 
 /* --------------------------------------------- composant */
@@ -429,6 +410,7 @@ pre {
   border-radius: 15px;
   color: white;
   padding: 1rem;
+  text-align: center;
 }
 
 .site__header__nav {
@@ -487,6 +469,9 @@ pre {
   flex-direction: column;
   list-style-type: none;
 }
+.menu-entete-container .menu > ul {
+  padding: 0;
+}
 @media screen and (min-width: 1000px) {
   .menu-entete-container .menu {
     flex-direction: row;
@@ -509,14 +494,18 @@ pre {
   word-wrap: break-word;
   padding: 0 1rem 0 1rem;
 }
+.site__aside h3 {
+  color: white;
+}
 .site__aside ul {
   list-style-type: none;
 }
 .site__aside ul li {
   list-style-type: "📚";
-  padding-inline-start: 1em;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
   font-size: clamp(0.5rem, 0.5rem + 2vw, 1.5rem);
-  margin: 0.7em;
+  margin: 1em;
 }
 @media screen and (min-width: 1000px) {
   .site__aside ul {
@@ -524,25 +513,37 @@ pre {
   }
 }
 
+ol, ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .site__footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: #0c609c;
   color: white;
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .site__footer section {
-  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.site__footer section h4 {
-  text-align: center;
+.site__footer section p {
+  padding: 0;
 }
-.site__footer section ul > li {
-  list-style-type: none;
-  font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+@media screen and (min-width: 1000px) {
+  .site__footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.fa {
+  border-radius: 25px;
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .recherche {
