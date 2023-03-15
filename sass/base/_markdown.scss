@@ -3,9 +3,14 @@
     color: white;
     padding: 1rem clamp(1rem, 3vw, 20rem);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
 
     @media screen and (min-width: 1000px) {
         border-radius: 15px 15px 0 0;
+    }
+
+    hr {
+        display: none;
     }
 
     h1,
